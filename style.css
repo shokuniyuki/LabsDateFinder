@@ -1,25 +1,13 @@
-html, body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-.box {
-	height: 80%;
-	width: 80%;
-	max-width: 600px;
-	margin: auto;
+.black-box {
 	background-color: black;
 	color: white;
+	max-width: 600px;
+	margin: 0 auto;
 	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
 }
 
 h1 {
-	text-align: center;
 	margin-top: 0;
 }
 
