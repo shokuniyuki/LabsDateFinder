@@ -23,4 +23,4 @@ for (let i = 0; i < dates.length; i++) {
   }
 }
 
-document.getElementById("dates").innerHTML = datesOutput;
+document.getElementById("output").innerHTML = datesOutput;
