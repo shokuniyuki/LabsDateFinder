@@ -19,8 +19,8 @@ for (let i = 0; i < dates.length; i++) {
   if (now < date) {
     const diffInMs = date.getTime() - now.getTime();
     const diffInDays = Math.round(diffInMs / (1000 * 60 * 60 * 24));
-    datesOutput += `<p>${label}${date.toLocaleDateString()} (${diffInDays} days)</p>`;
+    datesOutput += `<li>${label}${date.toLocaleDateString()} (${diffInDays} days)</li>`;
   }
 }
 
-document.getElementById("output").innerHTML = datesOutput;
+document.getElementById("dates").innerHTML = datesOutput;
