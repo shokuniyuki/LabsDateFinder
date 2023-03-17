@@ -7,9 +7,16 @@ const dates = [
   ["B3 Deliveries Due", new Date("2023-07-15T00:00:00Z")],
 ];
 
-const labels = ["B1 Framework Due: ", "B1 Deliveries Due: ", "B2 Framework Due: ", "B2 Deliveries Due: ", "B3 Framework Due: ", "B3 Deliveries Due: "];
+const labels = [
+  "B1 Framework Due: ",
+  "B1 Deliveries Due: ",
+  "B2 Framework Due: ",
+  "B2 Deliveries Due: ",
+  "B3 Framework Due: ",
+  "B3 Deliveries Due: ",
+];
 
-let datesOutput = '';
+let datesOutput = "";
 
 for (let i = 0; i < dates.length; i++) {
   const date = dates[i][1];
@@ -19,8 +26,8 @@ for (let i = 0; i < dates.length; i++) {
   if (now < date) {
     const diffInMs = date.getTime() - now.getTime();
     const diffInDays = Math.round(diffInMs / (1000 * 60 * 60 * 24));
-    datesOutput += `<li>${label}${date.toLocaleDateString()} (${diffInDays} days)</li>`;
+    datesOutput += `<p>${label}${date.toLocaleDateString()} (${diffInDays} days)</p>`;
   }
 }
 
-document.getElementById("dates").innerHTML = datesOutput;
+document.getElementById("output").innerHTML = datesOutput;
