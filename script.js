@@ -51,17 +51,14 @@ calculateBtn.addEventListener("click", function() {
   
   // Display the results
   outputDiv.innerHTML = `
-    <div class="black-box">
-      <h2>Results</h2>
-      <ul>
-        <li>${formatDate(date1)} (${date1Weekday})</li>
-        <li>${formatDate(date2)} (${date2Weekday})</li>
-        <li>${formatDate(date3)} (${date3Weekday})</li>
-        <li>${formatDate(date4)} (${date4Weekday})</li>
-        <li>${formatDate(date5)} (${date5Weekday})</li>
-        <li>${formatDate(date6)} (${date6Weekday})</li>
-        <li>${formatDate(date7)} (${date7Weekday})</li>
-      </ul>
-    </div>
-  `;
+    <h2>Results</h2>
+    <ul>
+      <li>${formatDate(date1)} (${date1Weekday})</li>
+      <li>${formatDate(date2)} (${date2Weekday})</li>
+      <li>${formatDate(date3)} (${date3Weekday})</li>
+      <li>${formatDate(date4)} (${date4Weekday})</li>
+      <li>${formatDate(date5)} (${date5Weekday})</li>
+      <li>${formatDate(date6)} (${date6Weekday})</li>
+      <li>${formatDate(date7)} (${date7Weekday})</li>
+    </ul>`;
 });
